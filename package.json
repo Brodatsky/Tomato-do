@@ -1,0 +1,26 @@
+{
+  "name": "tomato-do",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brodatsky/Tomato-do.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brodatsky/Tomato-do/issues"
+  },
+  "homepage": "https://github.com/Brodatsky/Tomato-do#readme",
+  "dependencies": {
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
