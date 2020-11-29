@@ -15,7 +15,23 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./index.pug",
+      filename: "index.html",
     }),
     new CleanWebpackPlugin(),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.pug$/,
+        use: [
+          { loader: "html-loader" },
+          { loader: "pug-html-loader", options: { data: {} } },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
